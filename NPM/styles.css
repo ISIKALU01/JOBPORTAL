@@ -1,0 +1,1591 @@
+body{
+    overflow-x: hidden;
+    font-family: oxygen, sans-serif;
+}
+
+#headernav{
+    background-color: gray;
+    box-shadow: 0 .2em .2em bisque;
+    z-index: 2;
+    }
+.navbar-brand{
+  padding: 0px;
+  margin-right: 60px;
+  margin-left: 10px;
+ }
+
+#navmenu {
+    margin-top: 0px;
+    font-family: oxygen, sans-serif;
+    text-transform: capitalize;
+    font-size: 1.1em;  
+   
+}
+
+#navmenu a{
+    color: whitesmoke;
+   
+}
+#navmenu a:hover{
+    color: mediumseagreen;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.carousel-item{
+    background: no-repeat scroll center scroll;
+    background-size: cover;
+}
+
+.carousel-item::before{
+    content:"";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.7;
+}
+
+.carousel-caption{
+    bottom: 250px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.carousel-caption h5{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: oxygen, sans-serif;
+    color: seagreen;
+    margin-bottom: 50px;
+    
+    
+}
+.carousel-caption p{
+    font-size: 1.5em;
+    top: 1rem;
+    font-family: oxygen, sans-serif;
+    color: bisque;
+}
+    
+ 
+.slider-btn{
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+
+.slider-btn .btn:hover{
+    box-shadow: 0 1px 5px 1px bisque;
+}
+
+.slider-btn .btn-1{
+    background-color: mediumseagreen;
+    color: white;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 30px;
+    padding: 20px;
+    width: 200px;
+}
+
+.slider-btn .btn-2{
+    background-color: darksalmon;
+    color: white;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 30px;
+    padding: 20px;
+    width: 200px;
+}
+
+/* LOGO SLIDER CONTENT SECTION */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.slider-header {
+  margin-bottom: 100px;
+}
+.slider-header h5{
+    text-align: center;
+    font-size: 2.2em;
+    margin-top: 100px;
+    font-family: oxygen, sans-serif;
+    font-weight: bold;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+   
+
+}
+.slider-header p{
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 50px;
+    word-spacing: 0.1em;
+}
+.brand-wheel {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+
+    --animationspeed: 45s;
+    --animationdelay: calc( var(--animationspeed) / 2 );
+}
+
+.brand-wheel::before {
+    position: absolute;
+    background-image: linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    width: 5%;
+    z-index: 2;
+    pointer-events: none;
+}
+.brand-wheel::after{
+    position: absolute;
+    background-image: linear-gradient(to left,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    width: 5%;
+    z-index: 2;
+    pointer-events: none;
+    right: 0;
+}
+
+.brand-slide {
+    flex-shrink: 0;
+    position: absolute;
+    animation-name: slidelogo;
+    animation-duration: var(--animationspeed);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.brand-slide.delay {
+    transform: translateX(100%);
+    animation-name: slidelogo;
+    animation-delay: var(--animationdelay);
+}
+
+.brand-wheel:hover .brand-slide {
+    animation-play-state: paused;
+}
+
+.logo-div {
+    display: inline-flex;
+    align-self: center;
+    animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+    padding: 0 20px 0 20px;
+}
+
+@keyframes slidelogo {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+/* END OF LOG SLIDE SECTION */
+
+/* CONTENT ONE SECTION  */
+.content-one{
+    background-color: seagreen;
+    color: whitesmoke;
+    margin-top: 50px;
+}
+
+.content-text{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+.content-text h5{
+    font-size: 7em;
+    font-weight: 700;
+   
+}
+.content-text h6{
+   font-size: 1.5em;
+   font-weight: 300;
+   text-transform: uppercase;
+   text-decoration: underline;
+   text-decoration-thickness: 5px;
+   text-decoration-color: darksalmon;
+   text-underline-offset: 4px;
+   margin-top: -20px;
+ 
+}
+
+.content-text p{
+    font-size: 1.2em;
+    margin-top: 40px;
+  }
+/* END OF CONTENT ONE SECTION */
+
+/* CONTENT TWO SECTION */
+.jf-help{
+    margin-top: 70px;
+    text-align: center;
+}
+.jf-help .title{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+}
+
+.jf-help .subtitle{
+    font-size: 2em;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+/*CONTENT TWO STYLING */
+.content-two{
+    padding-left: 50px;
+    padding-right: 20px;
+}
+.c2-icon{
+    margin-bottom: 10px;
+}
+.c2-detail h3{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.c2-detail p{
+    width: 90%;
+    word-spacing: 3px;
+}
+/* CONTENT THREE STYLING */
+.content-three{
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: 70px;
+}
+.content-three-header h3{
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: gray;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 40px;
+}
+.job1, .job2, .job3{
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    position: relative;
+}
+.job1 span, .job2 span, .job3 span{
+    position: absolute;
+    color: whitesmoke;
+    bottom: 0;
+	right: 0;
+	text-align: center;
+	width: 100%;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #000;
+	opacity:.7;
+}
+/* END OF CONTENT THREE STYLING */
+/* CONTENT FOUR STYLING */
+.content-four-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.content-four-header h4{
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+.content-four-header h3{
+    font-size: 2em;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.post1, .post2, .post3{
+    height: 250px;
+	width:100%;
+	margin-bottom:15px;
+	position: relative;
+	overflow: hidden;
+}
+.post1 span, .post2 span, .post3 span{
+    position: absolute;
+    color: black;
+    bottom: 0;
+	right: 0;
+	text-align: center;
+	width: 100%;
+	font-size: .8em;
+	text-transform: uppercase;
+	background-color: white;
+	opacity:.7;
+    height: 180px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.post1 h6, .post2 h6, .post3 h6{
+    margin-top: 20px;
+}
+.post1 div, .post2 div, .post3 div{
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-size: 1.5em; 
+    font-weight: bold;
+}
+.post1 span p, .post2 span p, .post3 span p{
+    margin-top: 40px;
+    text-transform: capitalize;
+    font-size: 1em;
+    color: darkblue;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 3px;
+    font-weight: bold;
+ }
+.content-four p{
+    text-align: center;
+    font-size: .8em;
+    color: darkblue;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* footer styling */
+.footer-clean {
+    padding:50px 0;
+    background-color: #4b4c4d;
+    color: white;
+  }
+  
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-clean ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-clean .item.social {
+    text-align:right;
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-clean .item.social {
+      text-align:center;
+    }
+  }
+  
+  .footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-clean .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  @media (max-width:991px) {
+    .footer-clean .item.social > a {
+      margin-top:40px;
+    }
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item.social > a {
+      margin-top:10px;
+    }
+  }
+  
+  .footer-clean .copyright {
+    margin-top:14px;
+    margin-bottom:0;
+    font-size:13px;
+    opacity:0.6;
+  }
+
+/*              MEDIA QUERIES        MEDIA QUERIES           MEDIA QUERIES                   */
+
+/* large devices */
+@media (min-width: 1200px) {
+   .carousel-caption p{
+    word-spacing: 10px;
+   }
+/* end of carousel styling */  /* end of carousel styling */  /* end of carousel styling */
+}
+
+
+ /* medium devices */
+@media (min-width: 992px) and (max-width:1199px) { 
+    .carousel-caption{
+        bottom: 100px;
+       }
+    .carousel-caption h5{
+        margin-bottom: 60px;
+        margin-top: 40px;
+    }
+    .carousel-caption p{
+        margin-bottom: 20px;
+        margin-top: 50px;
+        letter-spacing: 0.1em;
+    }
+    /* end of carousel styling */  /* end of carousel styling */  /* end of carousel styling */  
+    
+    /* content one styling */
+    .content-text{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .content-text h5{
+        font-size: 7em;
+    }
+    .content-text h6{
+       margin-top: -20px;
+     }
+    .content-text p{
+        font-size: 1.1em;
+    }
+    /* End OF CONTENT ONE STYLING */
+    /* content four styling */
+    .content-four span p{
+        display: none;
+    }
+}
+
+
+/* small devices section */
+
+@media (min-width:768px) and (max-width:991px){
+
+    .carousel-caption{
+        bottom: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+        
+    }
+    .carousel-caption h5{
+        margin-bottom: 60px;
+        font-size: 40px;
+      
+    }
+    .carousel-caption p{
+        margin-top: 70px;
+        font-size: 1.3em;
+        letter-spacing: 0.1em;
+    }
+    .slider-btn{
+        margin-bottom: 10px;
+        margin-top: 60px;
+        margin-left: 40px;
+       
+       
+    }
+    .slider-btn .btn-1{
+        background-color: mediumseagreen;
+        color: white;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: bold;
+        margin-right: 30px;
+        padding: 17px;
+        width: 140px;
+        
+    }
+    
+    .slider-btn .btn-2{
+        background-color: darksalmon;
+        color: white;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: bold;
+        margin-right: 30px;
+        padding: 17px;
+        width: 140px;
+    }
+/* end of carousel styling */  /* end of carousel styling */  /* end of carousel styling */
+
+/* LOGO SLIDER HEADER STYLING */
+.slider-header h5{
+    font-size: 2em;
+}
+/* END OF LOGO HEADER STYLING */
+
+/* CONTENT ONE STYLING */
+.content-text{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.content-text p{
+    font-size: 1.2em;
+   }
+.content-text h5{
+    margin-bottom: 10px;
+    font-size: 4.5em;
+} 
+.content-text h6{
+    font-weight: 200;
+   }
+ .content-header{
+     float: left;
+     margin-bottom: 100px;
+   }
+ .context-two{
+    margin-top: -50px;
+}
+.context-three{
+    margin-top: -50px ;
+}
+.contail-one{
+    margin-left: 300px;
+}
+.contail-two{
+    margin-left: 300px;
+}
+.contail-three{
+    margin-left: 300px;
+}
+ 
+ /* END OF CONTENT ONE STYLING*/
+
+/* content two styling */
+ .c2-icon{
+     float: left;
+    }
+.c2-detail{
+    margin-left: 200px;
+ }
+ .c2-detail p{
+    width: 100%;
+    word-spacing: 3px;
+}
+ /* END OF CONTENT TWO STYLING */
+ /* CONTENT FOUR STYLING */
+ .post1 div, .post2 div, .post3 div{
+    font-size: 1.2em;
+}
+.post1 h6, .post2 h6, .post3 h6{
+    margin-top: 20px;
+    font-size: 0.7em;
+}
+.post1 img, .post2 img, .post3 img{
+    height: 200px;
+}
+.post1 p, .post2 p, .post3 p{
+    display: none;
+}
+}
+
+/* very small devices section very small devices section  very small devices section */
+
+@media (max-width:767px){
+    .carousel-caption{
+        top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .carousel-caption p{
+        margin-top: 5px;
+        margin-bottom: 50px;
+        font-size: 1em;
+        letter-spacing: 0.1em;
+    }
+    .slider-btn{
+        margin-bottom: 100px;
+        margin-top: 50px;
+    }
+
+    .carousel-caption h5{
+        margin-bottom:50px;
+        font-size: 30px;
+        
+    }
+    .slider-btn{
+        margin-left: 40px;
+    }
+
+    .slider-btn .btn-1{
+        background-color: mediumseagreen;
+        color: white;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: bold;
+        margin-right: 30px;
+        padding: 15px;
+        width: 150px;
+    }
+    
+    .slider-btn .btn-2{
+        background-color: darksalmon;
+        color: white;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: bold;
+        margin-right: 30px;
+        padding: 15px;
+        width: 150px;
+    }
+    /* end of carousel styling */  /* end of carousel styling */  /* end of carousel styling */  
+
+    /* SLIDER HEADER STYLING */
+
+   .slider-header{
+       margin-bottom: -10px;
+   }
+    .slider-header h5{
+        font-size: 1.5em;
+        margin-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+   .slider-header p{
+       font-size: 0.9em;
+     }
+
+   /* END OF SLIDER HEADER STYLING */
+
+   /* CONTENT ONE STYLING */
+    .content-text{
+       margin-top: 30px;
+       padding-left: 0;
+     
+    }
+    .content-text p{
+        font-size: 1.1em;
+       }
+    .content-text h5{
+        margin-bottom: 10px;
+        font-size: 4.5em;
+    } 
+    .content-text h6{
+        font-weight: 200;
+       }
+    .context-two{
+        margin-top: -50px;
+    }
+    .context-three{
+        margin-top: -50px ;
+    }
+    /* END OF CONTENT ONE STYLING */
+    /* CONTENT TWO STYLING */
+    .content-two{
+        padding-left: 10px;
+    }
+    .c2-icon{
+        float: left;
+        margin-bottom: 100px;
+       }
+   .c2-detail{
+       margin-left: 100px;
+    }
+    .c2-detail p{
+       width: 100%;
+       font-size: 1em;
+    }
+    /* END OF CONTENT STYLING TWO */
+    /* CONTENT STYLING THREE */
+    .job1, .job2, .job3{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /* END OF CONTENT THREE STYLING */
+  }
+
+@media (max-width:767px) and (min-width:626px){
+  /* CONTENT FOUR STYLING */
+  .post1, .post2, .post3{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 40px;
+ }
+}
+
+
+
+/* super small devices section super small devices section super small devices section */
+
+@media (max-width:625px) and (min-width:510px){
+    /* carousel styling */
+    .carousel-caption{
+        top: 20px;
+        }
+
+    .carousel-caption h5{
+        margin-bottom:10px;
+        font-size: 20px;
+      } 
+
+    .carousel-caption p{
+        margin-top: 30px;
+        font-size: 1em;
+        padding-left: 10px;
+        padding-right: 10px;
+        letter-spacing: 0.1em;
+    }
+
+    .slider-btn{
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    .slider-btn .btn-1{
+        background-color: mediumseagreen;
+        color: white;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.6rem;
+        font-weight: bold;
+        margin-right: 30px;
+        padding: 10px;
+        width: 120px;
+    }
+
+    .slider-btn .btn-2{
+        background-color: darksalmon;
+        color: white;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.6rem;
+        font-weight: bold;
+        margin-right: 30px;
+        padding: 10px;
+        width: 120px;
+    }
+    /* end of carousel styling */  /* end of carousel styling */  /* end of carousel styling */
+
+
+    /* CONTENT ONE STYLING */
+    .content-text{
+        margin-top: 30px;
+        padding-left: 0;
+      
+     }
+     .content-text p{
+         font-size: 1.1em;
+        }
+     .content-text h5{
+         margin-bottom: 10px;
+         font-size: 4.5em;
+     } 
+     .content-text h6{
+         font-weight: 200;
+        }
+     .context-two{
+         margin-top: -50px;
+     }
+     .context-three{
+         margin-top: -50px ;
+     }
+     /* END OF CONTENT STYLING */
+     /* CONTENT FOUR STYLING */
+  
+     .post1 div, .post2 div, .post3 div{
+        font-size: 1.2em;
+    }
+    .post1, .post2, .post3{
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 40px;
+     }
+}
+
+
+@media (max-width:569px) and (min-width:524px){
+    /* carousel styling */
+    .carousel-caption{
+        bottom: 160px;
+        }
+
+    .carousel-caption h5{
+        margin-bottom:10px;
+        font-size: 20px;
+    } 
+
+    .carousel-caption p{
+        margin-top: 50px;
+        font-size: 1em;
+        padding-left: 10px;
+        padding-right: 10px;
+        letter-spacing: 0.1em;
+    }
+
+    .slider-btn{
+        margin-left: 30px;
+    }
+
+    .slider-btn .btn-1{
+        background-color: mediumseagreen;
+        color: white;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.6rem;
+        font-weight: bold;
+        margin-right: 30px;
+        padding: 10px;
+        width: 120px;
+    }
+
+    .slider-btn .btn-2{
+        background-color: darksalmon;
+        color: white;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.6rem;
+        font-weight: bold;
+        margin-right: 30px;
+        padding: 10px;
+        width: 120px;
+    }
+    /* end of carousel styling */  /* end of carousel styling */  /* end of carousel styling */ 
+
+  /* CONTENT ONE STYLING */
+  .content-text{
+    margin-top: 30px;
+    padding-left: 0;
+  
+ }
+ .content-text p{
+     font-size: 1.1em;
+    }
+ .content-text h5{
+     margin-bottom: 10px;
+     font-size: 4.5em;
+ } 
+ .content-text h6{
+     font-weight: 200;
+    }
+ .context-two{
+     margin-top: -50px;
+ }
+ .context-three{
+     margin-top: -50px ;
+ }
+ /* END OF CONTENT STYLING */
+ /* CONTENT FOUR STYLING */
+ .post1, .post2, .post3{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 40px;
+}
+ .post1 div, .post2 div, .post3 div{
+     font-size: 1.1em;
+ }
+}
+
+
+@media (max-width:523px) and (min-width:509px){
+    .carousel-caption{
+        bottom: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .carousel-caption h5{
+        margin-bottom:10px;
+        font-size: 15px;
+    } 
+    .carousel-caption p{
+        margin-top: 20px;
+        font-size: 0.5em;
+        letter-spacing: 0.2em;
+        
+    }
+
+    .slider-btn{
+       
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .slider-btn .btn-1{
+        background-color: mediumseagreen;
+        color: white;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.4rem;
+        font-weight: bold;
+        margin-right: 30px;
+        padding: 10px;
+        width: 100px;
+        
+    }
+
+    .slider-btn .btn-2{
+        background-color: darksalmon;
+        color: white;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.4rem;
+        font-weight: bold;
+        margin-right: 30px;
+        padding: 10px;
+        width: 100px;
+    }
+   /* end of carousel styling */  /* end of carousel styling */  /* end of carousel styling */
+    /* CONTENT ONE STYLING */
+  .content-text{
+    margin-top: 30px;
+    padding-left: 0;
+  
+ }
+ .content-text p{
+     font-size: 1.1em;
+    }
+ .content-text h5{
+     margin-bottom: 10px;
+     font-size: 4.5em;
+ } 
+ .content-text h6{
+     font-weight: 200;
+    }
+ .context-two{
+     margin-top: -50px;
+ }
+ .context-three{
+     margin-top: -50px ;
+ }
+ /* END OF CONTENT STYLING */
+ /* CONTENT FOUR STYLING */
+ .post1 div, .post2 div, .post3 div{
+    font-size: 1em;
+}
+.content-four-header h4{
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.content-four-header h3{
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.post1, .post2, .post3{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 40px;
+}
+}
+
+
+/* phone screen size phone screen size  phone screen size  phone screen size  phone screen size */
+@media (max-width:508px) and (min-width:464px){
+    .carousel-caption{
+        bottom: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .carousel-caption h5{
+        margin-bottom:10px;
+        font-size: 15px;
+    } 
+    .carousel-caption p{
+        margin-top: 20px;
+        font-size: 0.5em;
+        letter-spacing: 0.2em;
+        
+    }
+
+    .slider-btn{
+       
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .slider-btn .btn-1{
+        background-color: mediumseagreen;
+        color: white;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.4rem;
+        font-weight: bold;
+        margin-right: 30px;
+        padding: 10px;
+        width: 100px;
+        
+    }
+
+    .slider-btn .btn-2{
+        background-color: darksalmon;
+        color: white;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.4rem;
+        font-weight: bold;
+        margin-right: 30px;
+        padding: 10px;
+        width: 100px;
+    }
+   /* end of carousel styling */  /* end of carousel styling */  /* end of carousel styling */
+
+    /* SLIDER HEADER STYLING */
+    .container{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .slider-header h5{
+        font-size: 1.7em;
+        margin-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+   .slider-header p{
+       font-size: 1em;
+       padding-left: 50px;
+       padding-right: 50px;
+
+   }
+
+   /* END OF SLIDER HEADER STYLING */
+
+   
+   /* CONTENT ONE STYLING */
+  .content-text{
+    margin-top: 30px;
+    padding-left: 0;
+  
+ }
+ .content-text p{
+     font-size: 1.1em;
+    }
+ .content-text h5{
+     margin-bottom: 10px;
+     font-size: 4.5em;
+ } 
+ .content-text h6{
+     font-weight: 200;
+    }
+ .context-two{
+     margin-top: -50px;
+ }
+ .context-three{
+     margin-top: -50px ;
+ }
+
+/* END OF CONTENT ONE STYLING */
+/* CONTENT FOUR STYLING */
+.post1 div, .post2 div, .post3 div{
+    font-size: 1em;
+}
+.post1, .post2, .post3{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 40px;
+}
+}
+
+
+@media (max-width:463px) and (min-width:407px){
+
+    .carousel-item{
+        height: 300px;
+        }
+    .carousel-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 300px;
+    }
+   .carousel-caption{
+        bottom: 300px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .carousel-caption h5{
+        margin-bottom:10px;
+        font-size: 15px;
+    } 
+    .carousel-caption p{
+        margin-top: 10px;
+        font-size: 0.5em;
+        letter-spacing: 0.1em;
+        }
+
+    .slider-btn{
+        margin-top: 0px;
+        margin-bottom: 150px;
+        margin-left: 20px;
+    }
+
+    .slider-btn .btn-1{
+        background-color: mediumseagreen;
+        color: white;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.4rem;
+        font-weight: bold;
+        margin-right: 30px;
+        padding: 10px;
+        width: 100px;
+        
+    }
+
+    .slider-btn .btn-2{
+        background-color: darksalmon;
+        color: white;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.4rem;
+        font-weight: bold;
+        margin-right: 30px;
+        padding: 10px;
+        width: 100px;
+    }
+   /* end of carousel styling */  /* end of carousel styling */  /* end of carousel styling */
+
+    /* SLIDER HEADER STYLING */
+    .container{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .slider-header h5{
+        font-size: 1.5em;
+        margin-top: 50px;
+    }
+   .slider-header p{
+       font-size: 1em;
+   }
+  /* END OF SLIDER HEADER STYLING */
+
+   /*CONTENT ONE STYLING */
+  .content-text{
+    margin-top: 30px;
+    padding-left: 0;
+  
+ }
+ .content-text p{
+     font-size: 1.1em;
+    }
+ .content-text h5{
+     margin-bottom: 10px;
+     font-size: 4.5em;
+ } 
+ .content-text h6{
+     font-weight: 200;
+    }
+ .context-two{
+     margin-top: -50px;
+ }
+ .context-three{
+     margin-top: -50px ;
+ }
+/* END OF CONTENT ONE STYLING */
+.jf-help{
+    margin-top: 30px;
+    text-align: center;
+}
+.jf-help .title{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+.jf-help .subtitle{
+    font-size: 1.4em;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+/* CONTENT TWO STYLING */
+.content-two{
+    padding-left: 10px;
+     }
+    .c2-icon{
+    float: left;
+    margin-bottom: 150px;
+   }
+    .c2-detail{
+    margin-left: 70px;
+    }
+    .c2-detail p{
+    width: 100%;
+    font-size: 1em;
+     }
+
+/* CONTENT FOUR STYLING */
+.content-four-header h4{
+    font-size: .9em;
+    text-transform: uppercase;
+}
+.content-four-header h3{
+    font-size: 1.2em;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.post1 div, .post2 div, .post3 div{
+    font-size: 1em;
+}
+.post1, .post2, .post3{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 40px;
+}
+}
+
+@media (max-width:406px) and (min-width:350px){
+
+    .carousel-item{
+        height: 300px;
+        }
+    .carousel-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 300px;
+    }
+
+    .carousel-item{
+        height: 300px;
+        }
+    .carousel-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 300px;
+    }
+    .carousel-caption{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .carousel-caption h5{
+        margin-bottom:10px;
+        font-size: 15px;
+    }
+    .slider-btn{
+       margin-top: 40px;
+       margin-left: 20px;
+      }
+
+    .carousel-caption p{
+        margin-top: 10px;
+        font-size: 0.5em;
+        margin-bottom: 15px;
+        letter-spacing: 0.1em;
+        }
+
+    .slider-btn .btn-1{
+        background-color: mediumseagreen;
+        color: white;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.4rem;
+        font-weight: bold;
+        margin-right: 10px;
+        padding: 10px;
+        width: 100px;
+         }
+
+    .slider-btn .btn-2{
+        background-color: darksalmon;
+        color: white;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.4rem;
+        font-weight: bold;
+        margin-right: 10px;
+        padding: 10px;
+        width: 100px;
+    }
+    /* end of carousel styling */  /* end of carousel styling */  /* end of carousel styling */
+    
+    /* SLIDER HEADER STYLING */
+    .container{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .slider-header h5{
+        font-size: 1.5em;
+        margin-top: 50px;
+    }
+   .slider-header p{
+       font-size: 1em;
+   }
+
+   /* END OF SLIDER HEADER STYLING */
+
+    /* CONTENT ONE STYLING */
+    .content-text{
+        margin-top: 30px;
+        padding-left: 0;
+      
+     }
+     .content-text p{
+         font-size: 1.1em;
+        }
+     .content-text h5{
+         margin-bottom: 10px;
+         font-size: 4.5em;
+     } 
+     .content-text h6{
+         font-weight: 200;
+        }
+     .context-two{
+         margin-top: -50px;
+     }
+     .context-three{
+         margin-top: -50px ;
+     }
+    /* END OF CONTENT ONE STYLING */
+    .jf-help{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .jf-help .title{
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-size: 0.7em;
+    }
+    .jf-help .subtitle{
+        font-size: 1.4em;
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
+     /* CONTENT TWO STYLING */
+    .content-two{
+    padding-left: 10px;
+     }
+    .c2-icon{
+    float: left;
+    margin-bottom: 150px;
+   }
+    .c2-detail{
+    margin-left: 70px;
+    }
+    .c2-detail p{
+    width: 100%;
+    font-size: 1em;
+     }
+     /* CONTENT THREE STYLING */
+     .content-three-header h3{
+        font-size: 1em;
+    }
+    /* CONTENT FOUR STYLING */
+    .content-four-header h4{
+        font-size: .7em;
+        text-transform: uppercase;
+    }
+    .content-four-header h3{
+        font-size: 1em;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    .post1 div, .post2 div, .post3 div{
+        font-size: 1em;
+    }
+    .post1, .post2, .post3{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 40px;
+    }
+ }
+@media (max-width:349px) and (min-width:280px){
+    .carousel-item{
+        height: 300px;
+        }
+    .carousel-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 300px;
+    }
+    .carousel-caption{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .carousel-caption h5{
+        margin-bottom:10px;
+        font-size: 15px;
+    }
+    .slider-btn{
+       margin-top: 40px;
+       margin-left: 20px;
+      }
+
+    .carousel-caption p{
+        margin-top: 10px;
+        font-size: 0.5em;
+        margin-bottom: 15px;
+        letter-spacing: 0.1em;
+        
+    }
+
+    .slider-btn .btn-1{
+        background-color: mediumseagreen;
+        color: white;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.4rem;
+        font-weight: bold;
+        margin-right: 10px;
+        padding: 10px;
+        width: 100px;
+        margin-bottom: 10px;
+        
+    }
+
+    .slider-btn .btn-2{
+        background-color: darksalmon;
+        color: white;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 0.4rem;
+        font-weight: bold;
+        margin-right: 10px;
+        padding: 10px;
+        width: 100px;
+    }
+    /* end of carousel styling */  /* end of carousel styling */  /* end of carousel styling */  
+
+    /* SLIDER HEADER STYLING */
+    .container{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .slider-header h5{
+        font-size: 1.5em;
+        margin-top: 50px;
+    }
+   .slider-header  p{
+       font-size: 1em;
+   }
+   /* end of slider header styling */
+
+   /* CONTENT ONE STYLING */
+   .content-text{
+    margin-top: 30px;
+    padding-left: 0;
+  }
+ .content-text p{
+     font-size: 1.1em;
+    }
+ .content-text h5{
+     margin-bottom: 10px;
+     font-size: 4.5em;
+ } 
+ .content-text h6{
+     font-weight: 200;
+    }
+ .context-two{
+     margin-top: -50px;
+ }
+ .context-three{
+     margin-top: -50px ;
+ }
+ /* END OF CONTENT ONE STYLING */
+ .jf-help{
+    margin-top: 50px;
+    text-align: center;
+}
+.jf-help .title{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+.jf-help .subtitle{
+    font-size: 1.4em;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+ /* CONTENT TWO STYLING */
+ .content-two{
+    padding-left: 10px;
+}
+.c2-icon{
+    float: left;
+    margin-bottom: 150px;
+   }
+.c2-detail{
+   margin-left: 70px;
+}
+.c2-detail p{
+   width: 100%;
+   font-size: 1em;
+}
+/* CONTENT THREE STYLING */
+.content-three-header h3{
+    font-size: 1em;
+}
+/* CONTENT FOUR STYLING */
+.content-four-header h4{
+    font-size: .7em;
+    text-transform: uppercase;
+}
+.content-four-header h3{
+    font-size: 1em;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.post1 div, .post2 div, .post3 div{
+    font-size: 1em;
+}
+.post1, .post2, .post3{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 40px;
+}
+}
+
+
